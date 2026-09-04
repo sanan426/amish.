@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AMISH— Luxury Perfumes</title>
+
+    <meta
+        name="description"
+        content="Discover premium fragrances crafted for confidence, elegance and individuality."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            AMISH<span>.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">product</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="searchBtn" aria-label="Search">
+                🔍
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                🛍
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <div class="search-box" id="searchBox">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search your fragrance..."
+        >
+
+        <button id="closeSearch">✕</button>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    THE ART OF FRAGRANCE
+                </p>
+
+                <h1>
+                    Your scent.
+                    <span>Your signature.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover sophisticated fragrances designed
+                    for those who leave a lasting impression.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#collection" class="btn btn-primary">
+                        Explore Collection
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        Our Story
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>25+</strong>
+                        <small>Fragrances</small>
+                    </div>
+
+                    <div>
+                        <strong>10K+</strong>
+                        <small>Happy Clients</small>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <small>Authentic</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-circle"></div>
+
+                <!-- Replace this image with your own -->
+                <img
+                    src="images/man-perfume.jpg"
+                    alt="Man wearing luxury perfume"
+                >
+
+                <div class="floating-card">
+
+                    <span>NEW ARRIVAL</span>
+
+                    <strong>
+                        Noir Intense
+                    </strong>
+
+                    <small>
+                        Eau de Parfum
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <p class="eyebrow">DISCOVER</p>
+
+            <h2>Find Your Signature</h2>
+
+            <div class="category-buttons">
+
+                <button class="category active" data-category="all">
+                    All
+                </button>
+
+                <button class="category" data-category="men">
+                    Men
+                </button>
+
+                <button class="category" data-category="women">
+                    Women
+                </button>
+
+                <button class="category" data-category="unisex">
+                    Unisex
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTION ================= -->
+
+        <section class="product" id="product">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
+
+                    <h2>
+                        Crafted to be remembered.
+                    </h2>
+                </div>
+
+                <p>
+                    Premium fragrances created with carefully
+                    selected notes and timeless character.
+                </p>
+
+            </div>
+
+
+            <div class="products" id="productGrid">
+
+                <!-- Product 1 -->
+
+                <article
+                    class="product-card"
+                    data-category="men"
+                    data-name="Noir Intense"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            BESTSELLER
+                        </span>
+
+                        <div class="perfume-bottle bottle-black">
+                            NOIRÉ
+                        </div>
+
+                        <button
+                            class="quick-add"
+                            data-product="Noir Intense"
+                        >
+                            + Add
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Noir Intense</h3>
+
+                            <p>
+                                Oud · Amber · Vanilla
+                            </p>
+                        </div>
+
+                        <strong>$89</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+
+                <article
+                    class="product-card"
+                    data-category="women"
+                    data-name="Velvet Rose"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge new">
+                            NEW
+                        </span>
+
+                        <div class="perfume-bottle bottle-red">
+                            NOIRÉ
+                        </div>
+
+                        <button
+                            class="quick-add"
+                            data-product="Velvet Rose"
+                        >
+                            + Add
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Velvet Rose</h3>
+
+                            <p>
+                                Rose · Musk · Amber
+                            </p>
+                        </div>
+
+                        <strong>$95</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+
+                <article
+                    class="product-card"
+                    data-category="unisex"
+                    data-name="Oud Royale"
+                >
+
+                    <div class="product-image">
+
+                        <div class="perfume-bottle bottle-gold">
+                            NOIRÉ
+                        </div>
+
+                        <button
+                            class="quick-add"
+                            data-product="Oud Royale"
+                        >
+                            + Add
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Oud Royale</h3>
+
+                            <p>
+                                Oud · Saffron · Leather
+                            </p>
+                        </div>
+
+                        <strong>$120</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+
+                <article
+                    class="product-card"
+                    data-category="men"
+                    data-name="Midnight Blue"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            SIGNATURE
+                        </span>
+
+                        <div class="perfume-bottle bottle-blue">
+                            NOIRÉ
+                        </div>
+
+                        <button
+                            class="quick-add"
+                            data-product="Midnight Blue"
+                        >
+                            + Add
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Midnight Blue</h3>
+
+                            <p>
+                                Bergamot · Cedar · Musk
+                            </p>
+                        </div>
+
+                        <strong>$79</strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about" id="about">
+
+            <div class="about-image">
+
+                <div class="about-badge">
+                    EST. 2026
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    OUR PHILOSOPHY
+                </p>
+
+                <h2>
+                    Fragrance is more than a scent.
+                </h2>
+
+                <p>
+                    At NOIRÉ, we believe a fragrance becomes part
+                    of your identity. Every bottle is created to
+                    express confidence, personality and elegance.
+                </p>
+
+                <p>
+                    From rich oud to fresh citrus and warm amber,
+                    our collection is designed for unforgettable
+                    moments.
+                </p>
+
+                <a href="#collection" class="text-link">
+                    Discover our fragrances →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section class="newsletter" id="contact">
+
+            <p class="eyebrow">
+                JOIN NOIRÉ
+            </p>
+
+            <h2>
+                Never miss a new fragrance.
+            </h2>
+
+            <p>
+                Subscribe for exclusive launches and offers.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <p
+                class="form-message"
+                id="formMessage"
+            ></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            NOIRÉ<span>.</span>
+        </div>
+
+        <p>
+            Luxury fragrances for unforgettable impressions.
+        </p>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 NOIRÉ. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART PANEL ================= -->
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h2>Your Bag</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Your bag is empty.
+            </p>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div>
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
